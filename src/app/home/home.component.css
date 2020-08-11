@@ -1,8 +1,14 @@
 
 .home1{
-    background-image: url('../home/Images/yellow.jpg');
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvvdN2AeU8LBFsuyCezE8lwf44_IKGzqSKeg&usqp=CAU'); */
+    background-image: url('../../../src/assets/main1.jpg');
     background-repeat: no-repeat;
-    height: 1000px;
-    width: 1000px;
-    /* background-size: cover; */
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.cdet
+{
+    font-size: 18px;
 }

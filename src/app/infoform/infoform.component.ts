@@ -14,9 +14,9 @@ export class InfoformComponent implements OnInit {
   }
 
 
-  onsubmit(course,date,time,teacher,password)
+  onsubmit(course,date,time,teacher,link,password)
   {
-    this.cservice.servedetails({course:course,date:date,time:time,teacher:teacher,password:password})//req.body 
+    this.cservice.servedetails({course:course,date:date,time:time,teacher:teacher,password:password,link:link})//req.body 
         .subscribe(
           data=>{console.log(data)},
           err=>console.log(err)

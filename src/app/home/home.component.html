@@ -6,9 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-  
-   <a (click)="goto('home')">Home</a>
-   <a (click)="goto('courses')">Courses</a>
+    <mat-toolbar color="primary">
+        <span><img src="../../assets/logo.png" height=40 width=80></span>
+        <a mat-button (click)="goto('home')"><span class="fa fa-home fa-lg"></span> Home</a>
+        <!-- <a mat-button routerLink="/about" routerLinkActive="active"><span class="fa fa-info fa-lg"></span> About</a> -->
+        <a mat-button (click)="goto('courses')"><span class="fa fa-list fa-lg"></span>Courses</a>
+        <a mat-button (click)="goto('about')"><span class="fa fa-info fa-lg"></span>About</a>
+        <!-- <a mat-button routerLink="/contactus" routerLinkActive="active"><span class="fa fa-address-card fa-lg"></span> Contact</a> -->
+        <!-- <span class="flex-spacer"></span>
+        <a mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> Login</a> -->
+    </mat-toolbar>
+
+
+
+
+   <!-- <a (click)="goto('home')">Home</a>
+   <a (click)="goto('courses')">Courses</a> -->
 <!-- <a (click)="goto('aboutpage')">About</a>
 <a (click)="goto('Contact')">Contact</a> -->
 
@@ -16,12 +29,101 @@
 
 </div>
 
-<div id="courses" class="courses1">
 
+<div id="courses" class="courses1">
+    
+    
+        <!-- <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header> -->
+        <div fxFlex>
+            <h1 style="text-align: center;">Upcoming Courses</h1>
+        <mat-grid-list cols="3" rowHeight="580px">
+            <!-- <mat-grid-tile *ngFor="let d of details">
+
+            </mat-grid-tile> -->
+            <mat-grid-tile>
+            <mat-card class="example-card" style="width: 350px;">
+                <img mat-card-image src="../../assets/multi.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <h3>Online happiness Program</h3>
+                  <p class="cdet">10th to 13th sept</p>
+                  <p class="cdet">evening 6 to 8</p>
+                  <p class="cdet">with sudarshan badireddy</p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button class="background-primary">REGISTER</button>
+                  <button mat-button class="background-primary">SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+            <mat-card class="example-card" style="width: 350px;">
+                <img mat-card-image src="../../assets/ohp1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <h3>Online happiness Program</h3>
+                    <p class="cdet">10th to 13th sept</p>
+                    <p class="cdet">evening 6 to 8</p>
+                    <p class="cdet">with sudarshan badireddy</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button class="background-primary">REGISTER</button>
+                    <button mat-button class="background-primary">SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+            </mat-grid-tile>        
+
+            <mat-grid-tile>
+            <mat-card class="example-card" style="width: 350px;">
+                <img mat-card-image src="../../assets/vtp.png" style="height: 250px;" alt="Photo of a Shiba Inu" >
+                <mat-card-content>
+                    <h3>Online happiness Program</h3>
+                    <p class="cdet">10th to 13th sept</p>
+                    <p class="cdet">evening 6 to 8</p>
+                    <p class="cdet">with sudarshan badireddy</p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button class="background-primary">REGISTER</button>
+                  <button mat-button class="background-primary">SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+            </mat-grid-tile>
+
+        </mat-grid-list>
+        </div>
+
+
+
+
+    <!-- <mat-card class="example-card" style="width: 200px;">
+        <img mat-card-image src="https://i.ytimg.com/vi/RsAUn4nr42M/hqdefault.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <h2>Online happiness Program</h2>
+          <h3>10th to 13th sept</h3>
+          <p>evening 6 to 8</p>
+          <p>with sudarshan badireddy</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card> -->
 
 </div>
 
-</body>
-</html>
+<div id="about">
+    <h1 style="margin-left: 5%;">About</h1>
+    <h2 style="text-align: center;">Benifits of SKY</h2>
+    <img src="../../assets/sky3.jpg">
+    <img src="../../assets/sky2.jpg">
+
+</div>
 <button routerLink="/form">form</button>
 <button (click)="openloginform()"><span class="fa fa-sign-in fa-lg"></span>Login</button>
+
+
+</body>
+</html>

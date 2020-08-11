@@ -17,6 +17,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
 // import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 
@@ -40,6 +43,9 @@ import { FormsModule } from '@angular/forms';
     FlexLayoutModule,
     MatFormFieldModule, 
     MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+    MatGridListModule,
     // MatCheckboxModule,
     MatDialogModule,
     FormsModule 

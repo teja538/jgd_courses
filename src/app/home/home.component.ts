@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
   
   openloginform() {
     this.dialog.open(LoginComponent, {width: '350px', height: '330px'});

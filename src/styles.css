@@ -4,5 +4,10 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .background-primary {
-    background-color: #512DA8!important;
+    background-color:#ffd300!important;
+  }
+
+  .mat-toolbar.mat-primary {
+    background:lightseagreen;
+    color: #fff;
   }

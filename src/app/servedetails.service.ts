@@ -13,4 +13,12 @@ export class ServedetailsService {
   servedetails(details){
     return this.http.post<any>(this.url,details)
   }
+
+  // getdetails()
+  // {
+  //   return this.http.get<any>
+  // }
+
+
+
 }

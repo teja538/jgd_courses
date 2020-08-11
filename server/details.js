@@ -16,8 +16,9 @@ router.post("/",function(req,res){
     ctime=req.body.time
     cteacher=req.body.cteacher
     cpassword=req.body.password
+    clink=req.body.clink
 
-    var query={coursename:cname,date:cdate,time:ctime,teacher:cteacher,password:cpassword}
+    var query={coursename:cname,date:cdate,time:ctime,teacher:cteacher,password:cpassword,link:clink}
     dbo.collection("details").insertOne(query,function(err,res){
         if(err) throw(err)
         console.log("successfully inserted")
