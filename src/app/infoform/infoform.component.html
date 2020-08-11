@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter Course details</h1>
+    <div class="card" style="width: 75%;margin-left:10%;">
+        {{userform.value|json}}
+        <form #userform="ngForm" (ngSubmit)="onsubmit(course.value,date.value,time.value,teacher.value,password.value)" novalidate>
+
+            <div class="form-group">
+                <label>Course name</label>
+                <input type="text" class="form-control" name="coursename" #course ngModel>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label>Dates</label>
+                        <input type="text" class="form-control" name="date" #date ngModel>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label>Timings</label>
+                        <input type="text" class="form-control" name="time" #time ngModel>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>Teachers</label>
+                <input type="text" class="form-control" name="teacher" #teacher ngModel>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="userpassword" #password ngModel>
+            </div>
+
+            <button [disabled]="userform.form.invalid" class="btn btn-primary" type="submit">Submit form</button>
+
+        </form>
+    </div>
+</body>
+</html>
+

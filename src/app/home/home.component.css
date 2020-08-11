@@ -1,0 +1,8 @@
+
+.home1{
+    background-image: url('../home/Images/yellow.jpg');
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1000px;
+    /* background-size: cover; */
+}
