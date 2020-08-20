@@ -1,1 +1,28 @@
-<p>courses works!</p>
+<!-- <p>courses works!</p> -->
+<mat-toolbar color="primary">
+
+    <button mat-button routerLink="/">
+    <mat-icon>home</mat-icon> 
+        JGD</button>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+        <button mat-button routerLink="/vtp">VTP</button>
+        <button mat-button routerLink="/hpy">Happiness Program</button>
+        <button mat-button routerLink="/sahaj">Sahaj</button>
+        <button mat-button routerLink="/dashboard">Dashboard</button>
+    </div>
+    <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+     <mat-icon>menu</mat-icon>
+    </button>
+
+</mat-toolbar>
+<mat-menu x-position="after" #menu="matMenu">
+    <button mat-menu-item routerLink="/vtp">VTP</button>
+    <button mat-menu-item routerLink="/hpy">Happiness Program</button>
+    <button mat-menu-item routerLink="/sahaj">Sahaj</button>
+    <button mat-menu-item routerLink="/dashboard">Dashboard</button>
+    <!--<button mat-menu-item>Help</button>-->
+</mat-menu>
+

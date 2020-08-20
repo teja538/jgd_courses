@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    
     <mat-toolbar color="primary">
-        <span><img src="../../assets/logo.png" height=40 width=80></span>
-        <a mat-button (click)="goto('home')"><span class="fa fa-home fa-lg"></span> Home</a>
-        <!-- <a mat-button routerLink="/about" routerLinkActive="active"><span class="fa fa-info fa-lg"></span> About</a> -->
-        <a mat-button (click)="goto('courses')"><span class="fa fa-list fa-lg"></span>Courses</a>
-        <a mat-button (click)="goto('about')"><span class="fa fa-info fa-lg"></span>About</a>
-        <!-- <a mat-button routerLink="/contactus" routerLinkActive="active"><span class="fa fa-address-card fa-lg"></span> Contact</a> -->
+        <span><img src="../../assets/img/logo.png" height=40 width=80></span>
+        <a mat-button (click)="goto('home')"><mat-icon>home</mat-icon>Home</a>
+        <a mat-button (click)="goto('courses')"><mat-icon>list</mat-icon>Courses</a>
+        <a mat-button (click)="goto('about')"><mat-icon>info</mat-icon>About</a>
+        <a mat-button (click)="goto('contact')"><mat-icon>phone</mat-icon>Contact</a>
         <!-- <span class="flex-spacer"></span>
         <a mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> Login</a> -->
     </mat-toolbar>
@@ -31,22 +31,12 @@
 
 
 <div id="courses" class="courses1">
-    
-    
-        <!-- <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header> -->
-        <div fxFlex>
-            <h1 style="text-align: center;">Upcoming Courses</h1>
-        <mat-grid-list cols="3" rowHeight="580px">
-            <!-- <mat-grid-tile *ngFor="let d of details">
-
-            </mat-grid-tile> -->
-            <mat-grid-tile>
-            <mat-card class="example-card" style="width: 350px;">
-                <img mat-card-image src="../../assets/multi.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+    <h1 style="text-align: center;">Upcoming Courses</h1>
+    <div class="coursecards" fxLayout="row wrap">
+        
+        <div fxFlex = "33%" fxFlex.xs="100%" fxFlex.sm="50%" >
+            <mat-card class="example-card" style="width: 85%">
+                <img mat-card-image src="../../assets/img/multi.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
                 <mat-card-content>
                   <h3>Online happiness Program</h3>
                   <p class="cdet">10th to 13th sept</p>
@@ -58,13 +48,14 @@
                   <button mat-button class="background-primary">SHARE</button>
                 </mat-card-actions>
             </mat-card>
-            </mat-grid-tile>
+        </div>
+            
 
-            <mat-grid-tile>
-            <mat-card class="example-card" style="width: 350px;">
-                <img mat-card-image src="../../assets/ohp1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+        <div fxFlex = "33%" fxFlex.xs="100%" fxFlex.sm="50%"> 
+            <mat-card class="example-card" style="width:  85%;">
+                <img mat-card-image src="../../assets/img/ohp1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
                 <mat-card-content>
-                    <h3>Online happiness Program</h3>
+                    <h3>sehej meditation course</h3>
                     <p class="cdet">10th to 13th sept</p>
                     <p class="cdet">evening 6 to 8</p>
                     <p class="cdet">with sudarshan badireddy</p>
@@ -74,13 +65,13 @@
                     <button mat-button class="background-primary">SHARE</button>
                 </mat-card-actions>
             </mat-card>
-            </mat-grid-tile>        
+        </div>  
 
-            <mat-grid-tile>
-            <mat-card class="example-card" style="width: 350px;">
-                <img mat-card-image src="../../assets/vtp.png" style="height: 250px;" alt="Photo of a Shiba Inu" >
+        <div fxFlex = "33%" fxFlex.xs="100%" fxFlex.sm="50%">
+            <mat-card class="example-card" style="width:  85%;">
+                <img mat-card-image src="../../assets/img/vtp.png" style="height: 250px;" alt="Photo of a Shiba Inu" >
                 <mat-card-content>
-                    <h3>Online happiness Program</h3>
+                    <h3>Volunteer Training Program</h3>
                     <p class="cdet">10th to 13th sept</p>
                     <p class="cdet">evening 6 to 8</p>
                     <p class="cdet">with sudarshan badireddy</p>
@@ -90,37 +81,203 @@
                   <button mat-button class="background-primary">SHARE</button>
                 </mat-card-actions>
             </mat-card>
-            </mat-grid-tile>
-
-        </mat-grid-list>
+            </div>
         </div>
-
-
-
-
-    <!-- <mat-card class="example-card" style="width: 200px;">
-        <img mat-card-image src="https://i.ytimg.com/vi/RsAUn4nr42M/hqdefault.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <h2>Online happiness Program</h2>
-          <h3>10th to 13th sept</h3>
-          <p>evening 6 to 8</p>
-          <p>with sudarshan badireddy</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-    </mat-card> -->
-
 </div>
 
 <div id="about">
-    <h1 style="margin-left: 5%;">About</h1>
+    
+    <div fxFlex="100">
+        <h1 style="margin-left: 5%;">About</h1>
     <h2 style="text-align: center;">Benifits of SKY</h2>
-    <img src="../../assets/sky3.jpg">
-    <img src="../../assets/sky2.jpg">
+        <div fxLayout="row">
+            <!-- <div fxFlex="40">
+                <img src="../../assets/sky3.jpg">
+            </div> -->
+            <div fxFlex>
+                <mat-card style="width: 1000px;margin: auto;margin-bottom: 10px;">
+                    <mat-card-content>
+                        <div fxFlex="100">
+                            <div fxLayout="row">
+                                <div fxFlex="25">
+                                    <img src="../../assets/img/70.png" style="height: 120px;width: 200px;">
+                                </div>
+                                <div fxFlex="75">
+                                    <p style="font-size: 22px;">
+                                        independent studies conducted on four continents and published in peer-review jornals have demonstrated
+                                        a comprehensive range of benefits from practicing SKY.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            <!-- <div FxLayout="row">
+                <div fxFlex="35" fxFlexOffset="15px">
+                <mat-card style="width:90%">
+                    <mat-card-header>
+                        <div mat-card-avatar class="lym" style="width: 100px;height: 80px;"></div>
+                        <mat-card-title><h4>Increased Lymphocyte Count by more than <span>5X</span></h4></mat-card-title>
+                        <mat-card-subtitle style="font-size: 16px;">compared to controls,suggesting enhanced immune function,DNA changed increases the life span of white blood cells</mat-card-subtitle>
+                      </mat-card-header>
+                </mat-card>
+                </div>
+                <div fxFlex="35">
+                <mat-card style="width:90%">
+                    <mat-card-header>
+                        <div mat-card-avatar class="stress" style="width: 100px;height: 80px;"></div>
+                        <mat-card-title><h4>Stress Harmones diminished by <span>56%</span></h4></mat-card-title>
+                        <mat-card-subtitle style="font-size: 16px;">Adding SKY to conventional treatment for individuals in recovery for substance use was Twice as effective in reducing Cortisol Levels</mat-card-subtitle>
+                      </mat-card-header>
+                </mat-card>
+                </div>
+                <div fxFlex="35">
+                    <mat-card style="width:90%">
+                        <mat-card-header>
+                            <div mat-card-avatar class="stress" style="width: 100px;height: 80px;"></div>
+                            <mat-card-title><h4>Stress Harmones diminished by <span>56%</span></h4></mat-card-title>
+                            <mat-card-subtitle style="font-size: 16px;">Adding SKY to conventional treatment for individuals in recovery for substance use was Twice as effective in reducing Cortisol Levels</mat-card-subtitle>
+                          </mat-card-header>
+                    </mat-card>
+                    </div>
+            </div> -->
+
+            <div class="cards1" FxLayout="row wrap">
+                <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="lym" style="width: 100px;height: 100px;"></div>
+                        <mat-card-title><h4>Increased Lymphocyte Count by <span>5X</span></h4></mat-card-title>
+                        <mat-card-subtitle style="font-size: 16px;">compared to controls,suggesting enhanced immune function,DNA changed increases the life span of white blood cells</mat-card-subtitle>
+                      </mat-card-header>
+                </mat-card>
+                </div>
+
+                <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="stress" style="width: 100px;height: 100px;"></div>
+                        <mat-card-title><h4>Stress Harmones diminished by <span>56%</span></h4></mat-card-title>
+                        <mat-card-subtitle style="font-size: 16px;">Adding SKY to conventional treatment for individuals in recovery for substance use was Twice as effective in reducing Cortisol Levels</mat-card-subtitle>
+                      </mat-card-header>
+                </mat-card>
+                </div>
+            </div>
+
+
+
+            <div class="cards1" FxLayout="row wrap">
+                <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="anxiety" style="width: 100px;height: 100px;"></div>
+                        <mat-card-title><h4>Lowered Anxiety by <span>23%</span></h4></mat-card-title>
+                        <mat-card-subtitle style="font-size: 16px;">73% of individuals suffereing from Generalized Anxiety Disorder experienced significant reductions in anxiety,after learning SKY</mat-card-subtitle>
+                      </mat-card-header>
+                </mat-card>
+                </div>
+                <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="dip" style="width: 100px;height:100px;"></div>
+                        <mat-card-title><h4>Depression relieved by <span>67%</span></h4></mat-card-title>
+                        <mat-card-subtitle style="font-size: 16px;">SKY significantly reduced major Depressive disorder as effectively as anti-depressant drug theropy,yet is free of unwanted side effects</mat-card-subtitle>
+                      </mat-card-header>
+                </mat-card>
+                </div>
+            </div>
+
+            <div class="cards1" FxLayout="row wrap">
+                <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="cho" style="width: 100px;height: 100px;"></div>
+                        <mat-card-title><h4>Cholesterol minimized in just <span>3 weeks</span></h4></mat-card-title>
+                        <mat-card-subtitle style="font-size: 16px;">SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.</mat-card-subtitle>
+                      </mat-card-header>
+                </mat-card>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="bp" style="width: 100px;height: 100px;"></div>
+                        <mat-card-title><h4>Healthier Blood Pressure <span>5X</span></h4></mat-card-title>
+                        <mat-card-subtitle style="font-size: 16px;">Heart rate and blood pressure are two key indicators of heart function.Peaple practicing SKY showed healthier Heart rates and Blood Pressure values</mat-card-subtitle>
+                      </mat-card-header>
+                </mat-card>
+            </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <!-- <img src="../../assets/sky2.jpg"> -->
+</div>
+
+
+
+
+
+<div id="contact">
+
+    <div class="footer" 
+    fxLayout="row wrap" 
+    fxLayout.lt-md="column" 
+    fxLayoutAlign="center center" 
+    fxLayoutGap="10px">
+
+  <div fxFlex="100" fxFlex.gt-sm="50">
+    <div fxLayout="row">
+      <div fxFlex="30">
+        <h4 style="margin-left: 30px;">Links</h4>
+        <mat-list> 
+          <mat-list-item><a mat-button (click)="goto('home')"><mat-icon>home</mat-icon>Home</a></mat-list-item>
+          <mat-list-item><a mat-button (click)="goto('courses')"><mat-icon>list</mat-icon>Courses</a></mat-list-item>
+          <!-- <mat-list-item><a mat-button routerLink="/menu">Menu</a></mat-list-item> -->
+          <!-- <mat-list-item><a mat-button routerLink="/contactus">Contact</a></mat-list-item> -->
+        </mat-list>
+      </div>
+      <div fxFlex="40">
+        <h4>Contact us</h4>
+        <address style="font-size: 90%">
+          ..........................<br>.................<br>...........<br>
+          <i class="fa fa-phone"></i>:9999999999<br>
+          <span class="iconify" data-icon="mdi-whatsapp" data-inline="false"></span>: 852 8765 4321<br>
+          <i class="fa fa-envelope"></i>:
+          <a href="mailto:saisree538@gmaul.com">saisree538@gmail.com</a>
+        </address>
+      </div>
+
+      <div fxFlex="30">
+        <h4>Contact us</h4>
+        <address style="font-size: 90%">
+          ..........................<br>.................<br>...........<br>
+          <i class="fa fa-phone"></i>:9999999999<br>
+          <span class="iconify" data-icon="mdi-whatsapp" data-inline="false"></span>: 852 8765 4321<br>
+          <i class="fa fa-envelope"></i>:
+          <a href="mailto:saisree538@gmaul.com">saisree538@gmail.com</a>
+        </address>
+      </div>
+    </div>
+   
+  </div>
+
+  <div fxFlex="100" fxFlex.gt-sm="45">
+    <div style="text-align:center">
+      <a mat-icon-button class="btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+      <a mat-icon-button class="btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+      <a mat-icon-button class="btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+      <a mat-icon-button class="btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+      <a mat-icon-button class="btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+      <a mat-icon-button class="btn-mail" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+    </div>
+  </div>
+</div>
+
 
 </div>
+
 <button routerLink="/form">form</button>
 <button (click)="openloginform()"><span class="fa fa-sign-in fa-lg"></span>Login</button>
 

@@ -1,7 +1,7 @@
 
 .home1{
     /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvvdN2AeU8LBFsuyCezE8lwf44_IKGzqSKeg&usqp=CAU'); */
-    background-image: url('../../../src/assets/main1.jpg');
+    background-image: url('../../../src/assets/img/main1.jpg');
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -12,3 +12,66 @@
 {
     font-size: 18px;
 }
+
+.example-header-image {
+    background-image: url('../../assets/img/ohp1.jpg');
+    background-size: cover;
+    height: 200px;
+    width:200px;
+  }
+
+  .lym{
+    background-image: url('../../assets/img/lym.jpg');
+    background-size: cover; 
+  }
+  .stress{
+    background-image: url('../../assets/img/stress.jpg');
+    background-size: cover; 
+  }
+  .anxiety{
+    background-image: url('../../assets/img/anxiety.jpg');
+    background-size: cover; 
+  }
+  .dip{
+    background-image: url('../../assets/img/dip.jpg');
+    background-size: cover; 
+  }
+  .cho{
+    background-image: url('../../assets/img/cho.jpg');
+    background-size: cover; 
+  }
+  .bp{
+    background-image: url('../../assets/img/bp.png');
+    background-size: cover; 
+  }
+
+.cards1 {
+    padding: 16px;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* margin-top: 10%;
+    margin-right: 10%; */
+    display: flex;
+    flex-flow: wrap;
+}
+.cards1 > mat-card {
+    margin-bottom: 16px;
+    /* width:60% ;
+    height: 30%; */
+  
+}
+
+.coursecards{
+    padding-left:18% ;
+    padding-right: 10%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+/* .c1{
+    width:50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .c1 {width: 100%;}
+  } */

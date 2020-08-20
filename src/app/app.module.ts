@@ -20,8 +20,18 @@ import { MatInputModule } from '@angular/material/input';
 import {MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 // import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { Home1Component } from './home1/home1.component';
+import { VtpComponent } from './vtp/vtp.component';
+import { HpyComponent } from './hpy/hpy.component';
+import { SahajComponent } from './sahaj/sahaj.component';
 
 
 
@@ -31,7 +41,11 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     InfoformComponent,
     LoginComponent,
-    CoursesComponent
+    CoursesComponent,
+    Home1Component,
+    VtpComponent,
+    HpyComponent,
+    SahajComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +60,13 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatButtonModule,
     MatGridListModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    MatCarouselModule.forRoot(),
+    CarouselModule,
+
+
     // MatCheckboxModule,
     MatDialogModule,
     FormsModule 
