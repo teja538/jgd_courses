@@ -9,6 +9,7 @@ import { Home1Component } from './home1/home1.component';
 import { VtpComponent } from './vtp/vtp.component';
 import { HpyComponent } from './hpy/hpy.component';
 import { SahajComponent } from './sahaj/sahaj.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home1', pathMatch: 'full' },
@@ -20,7 +21,9 @@ const routes: Routes = [
   {path:"home",component:HomeComponent},
   {path:"form",component:InfoformComponent},
   {path:"login",component:LoginComponent},
-  {path:"courses",component:CoursesComponent}
+  {path:"courses",component:CoursesComponent},
+  {path:"footer",component:FooterComponent}
+
 ];
 
 @NgModule({

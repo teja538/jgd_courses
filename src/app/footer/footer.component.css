@@ -1,0 +1,16 @@
+.contact
+{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center  ;
+}
+
+/* .footer{
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    width: 100%;
+    /* background-color: $background-pale;
+    @include zero-margin(20px, 0px); */

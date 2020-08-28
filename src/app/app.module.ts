@@ -32,6 +32,7 @@ import { Home1Component } from './home1/home1.component';
 import { VtpComponent } from './vtp/vtp.component';
 import { HpyComponent } from './hpy/hpy.component';
 import { SahajComponent } from './sahaj/sahaj.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -45,7 +46,8 @@ import { SahajComponent } from './sahaj/sahaj.component';
     Home1Component,
     VtpComponent,
     HpyComponent,
-    SahajComponent
+    SahajComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

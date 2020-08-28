@@ -7,3 +7,108 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.quote
+{
+    background-image:url("../../../src/assets/img1/quo.png");
+    min-height: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses
+{
+    background-image:url("../../../src/assets/img1/bird1.jpg");
+    min-height: 70%;
+    margin-bottom: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+   
+}
+.upcoming
+{
+    height: 480px;
+    padding:6%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.mid
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(0, 0, 0, 0.233);
+}
+.con:hover .mid{
+    opacity: 1;
+}
+.text {
+  
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+ 
+  }
+
+.ca
+{ 
+    height: 550px;
+    width: 300px;  
+}
+
+.background-primary {
+    background-color:#4cc1bb3a!important;
+  }
+
+
+.teacher
+{
+  
+  background-image:url("../../../src/assets/img1/sahajbg1.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.178);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    /* align-items: center; */
+ 
+}
+
+.ttext
+{
+    border: 5px solid brown;
+    width: 40%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: -3%;
+    text-align: center;
+}
+
+.timg
+{
+    padding-top:5%;
+}

@@ -11,8 +11,8 @@ import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 export class Home1Component implements OnInit {
 
    // Slider Images
-   slides=[{'image':'../assets/img1/boat.jpg','text':'1st slide'},
-   {'image':'../assets/img1/step.jpg','text':'2nd slide'},
+   slides=[{'image':'../assets/img1/hpy1.jpg','text':'The Happiness Program'},
+   {'image':'../assets/img1/sahaj3.jpg','text':'2nd slide'},
    {'image':'../assets/img1/vtp1.jpg','text':'3rd slide'}]
 
 
