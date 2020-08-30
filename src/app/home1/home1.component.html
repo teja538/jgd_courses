@@ -6,7 +6,10 @@
   interval="5000"
   color="accent"
   maxWidth="auto"
+  maxHeight="100px"
+ 
   proportion="35"
+
   slides="3"
   [loop]="true"
   [hideArrows]="false"
@@ -119,8 +122,16 @@
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button class="background-primary">REGISTER</button>
-        <button mat-raised-button class="background-primary">SHARE</button>
-        <button mat-raised-button class="background-primary" routerLink="/hpy"><mat-icon>navigate_next</mat-icon></button>
+        <!-- <button mat-raised-button class="background-primary">SHARE</button> -->
+        <button mat-raised-button class="background-primary" routerLink="/hpy">MORE</button>
+        <!-- <button mat-raised-button class="background-primary"><mat-icon style="text-align: center;">share</mat-icon></button> -->
+        <!-- <button><mat-icon style="text-align: center;">share</mat-icon></button> -->
+        <button mat-mini-fab style="background-color: lightseagreen;">
+          <mat-icon>share</mat-icon>
+        </button>
+        <!-- <button mat-raised-button class="background-primary"> <mat-icon>share</mat-icon></button> -->
+
+
       </mat-card-actions>
     </mat-card>
   </div>
@@ -291,38 +302,39 @@
   <h1 style="color: aliceblue;text-align: center;padding: 4%;">What others say ...............</h1>
 
   <div class="car2">
-  <mat-carousel
-  timings="250ms ease-in"
-  [autoplay]="true"
-  interval="1000"
-  color="accent"
-  maxWidth="50%"
-  proportion="45"
-  slides="3"
-  [loop]="true"
-  [hideArrows]="false"
-  [hideIndicators]="false"
-  [useKeyboard]="true"
-  [useMouseWheel]="false"
-  orientation="ltr"
->
-  <mat-carousel-slide
+    <div>
+      <mat-carousel
+      timings="250ms ease-in"
+      [autoplay]="true"
+      interval="1000"
+      color="accent"
+      maxWidth="500px"
+      proportion="45"
+      slides="3"
+      [loop]="true"
+      [hideArrows]="false"
+      [hideIndicators]="false"
+      [useKeyboard]="true"
+      [useMouseWheel]="false"
+      orientation="ltr"
+    >
+      <mat-carousel-slide
 
-  *ngFor="let ex of experience; let i = index"
-   
-  >
-    <!-- <h1 style="color: aliceblue;">{{slide.text}}</h1> -->
-    <mat-card>
-      <mat-card-header>  
-        <img src="{{ex.image}}" style="height: 120px;width: 200px;">
-          <mat-card-title><h4>{{ex.h}}<span>3 weeks</span></h4></mat-card-title>
-          <mat-card-subtitle style="font-size: 16px;">{{ex.t}}</mat-card-subtitle>
-        </mat-card-header>
-    </mat-card>
+      *ngFor="let ex of experience; let i = index"
+      
+      >
+        <!-- <h1 style="color: aliceblue;">{{slide.text}}</h1> -->
+        <mat-card>
+          <mat-card-header>  
+            <img src="{{ex.image}}" style="height: 120px;width: 200px;">
+              <mat-card-title><h4>{{ex.h}}<span>3 weeks</span></h4></mat-card-title>
+              <mat-card-subtitle style="font-size: 16px;">{{ex.t}}</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
 
-  </mat-carousel-slide>
-</mat-carousel>
-
+      </mat-carousel-slide>
+    </mat-carousel>
+  </div> 
 </div>
 
 </div>

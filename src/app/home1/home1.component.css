@@ -154,8 +154,9 @@
 
 .car2
 {
-    margin-left: 35%;
-    align-items: center;
+  margin-left: 30%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cdet

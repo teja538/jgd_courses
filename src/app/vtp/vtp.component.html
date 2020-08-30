@@ -22,75 +22,30 @@
     <h1 style="text-align: center;margin-top: 6%;">Upcoming Courses</h1>
 
 <div class="upcoming">
-  <div class="ca card0">
-    <mat-card>
-      <div class="con">
-      <img mat-card-image src="../../assets/img1/vtpimg1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-      <div class="mid">
-        <div class="text">Lets do</div></div>
-      </div>
-      <mat-card-content>
-          <h3 style="font-family: 'Sriracha', cursive;">Volunteer Training Program</h3>
-          <p class="cdet">10th to 13th sept</p>
-          <p class="cdet">evening 6 to 8</p>
-          <p class="cdet">with sudarshan badireddy</p>
-      </mat-card-content>
+  <div *ngFor="let cd of coursedetails">
+    <div class="ca card0">
+      <mat-card>
+        <div class="con">
+        <img mat-card-image src="{{cd.image}}" style="height: 250px;" alt="Photo of a Shiba Inu" >
+        <div class="mid">
+          <div class="text">Lets do</div></div>
+        </div>
+        <mat-card-content>
+            <h3 style="font-family: 'Sriracha', cursive;">{{cd.coursename}}</h3>
+            <p class="cdet">{{cd.date}}</p>
+            <p class="cdet">{{cd.time}}</p>
+            <p class="cdet">{{cd.teacher}}</p>
+        </mat-card-content>
 
-      <mat-card-actions style="display: flex;justify-content: space-around;">
-        <button mat-raised-button class="background-primary">REGISTER</button>
-        <button mat-raised-button class="background-primary">SHARE</button>
-        
-      </mat-card-actions>
-    </mat-card>
+        <mat-card-actions style="display: flex;justify-content: space-around;">
+          <button mat-raised-button class="background-primary">REGISTER</button>
+          <button mat-raised-button class="background-primary">SHARE</button>
+          
+        </mat-card-actions>
+      </mat-card>
+    </div>
   </div>
-
-  <div class="ca card2">
-
-    <mat-card>
-      <div class="con">
-      <img mat-card-image src="../../assets/img1/vtpimg2.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-      <div class="mid">
-        <div class="text">Lets do</div></div>
-      </div>
-      <mat-card-content>
-          <h3 style="font-family: 'Sriracha', cursive;">Volunteer Training Program</h3>
-          <p class="cdet">10th to 13th sept</p>
-          <p class="cdet">evening 6 to 8</p>
-          <p class="cdet">with sudarshan badireddy</p>
-      </mat-card-content>
-      <mat-card-actions style="display: flex;justify-content: space-around;">
-        <button mat-raised-button class="background-primary">REGISTER</button>
-        <button mat-raised-button class="background-primary">SHARE</button>
-       
-      </mat-card-actions>
-    </mat-card>
-    
-  </div>
-
-
-  <div class="ca card3">
-
-    <mat-card>
-      <div class="con">
-      <img mat-card-image src="../../assets/img1/vtpimg3.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-      <div class="mid">
-        <div class="text">Lets do</div></div>
-      </div>
-      <mat-card-content>
-          <h3 style="font-family: 'Sriracha', cursive;">Volunteer Training Program</h3>
-          <p class="cdet">10th to 13th sept</p>
-          <p class="cdet">evening 6 to 8</p>
-          <p class="cdet">with sudarshan badireddy</p>
-      </mat-card-content>
-      <mat-card-actions style="display: flex;justify-content: space-around;">
-        <button mat-raised-button class="background-primary">REGISTER</button>
-        <button mat-raised-button class="background-primary">SHARE</button>
-        
-      </mat-card-actions>
-    </mat-card>
-    
-  </div>
-</div>
+</div> 
 
 <div class="fixedbg">
     <img src="../assets/img1/voltree1.jpg" height="20%" width="40%"> 

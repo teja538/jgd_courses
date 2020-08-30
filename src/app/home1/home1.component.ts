@@ -21,7 +21,7 @@ export class Home1Component implements OnInit {
    },{'image':'../assets/img1/boat.jpg','h':'B','t':'SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.'},{'image':'../assets/img1/boat.jpg','h':'B','t':'SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.'}]
   
 
-
+   
   constructor() { }
 
   ngOnInit(): void {

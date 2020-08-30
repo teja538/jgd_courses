@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {CoursesService } from '../courses.service';
+import {Icourse} from '../course';
+
 
 @Component({
   selector: 'app-vtp',
@@ -6,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vtp.component.css']
 })
 export class VtpComponent implements OnInit {
+  
+  coursedetails:Icourse[];
+ 
 
-  constructor() { }
+  constructor(private courseservice:CoursesService) { }
 
   ngOnInit(): void {
-  }
+    this.coursedetails=this.courseservice.getcoursedetails();
+    console.log(this.coursedetails);
+  } 
 
 }
