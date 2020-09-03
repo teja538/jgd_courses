@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ServedetailsService} from '../servedetails.service'
 
+
 @Component({
   selector: 'app-infoform',
   templateUrl: './infoform.component.html',
@@ -8,19 +9,36 @@ import {ServedetailsService} from '../servedetails.service'
 })
 export class InfoformComponent implements OnInit {
 
-  constructor(private cservice:ServedetailsService) { }
+  constructor(private servedetailsservice:ServedetailsService) { }
 
   ngOnInit(): void {
   }
 
 
-  onsubmit(course,date,time,teacher,link,password)
+  onsubmit(course,text,startdate,enddate,time,teacher,link,password,userform)
   {
-    this.cservice.servedetails({course:course,date:date,time:time,teacher:teacher,password:password,link:link})//req.body 
+    this.servedetailsservice.servedetails({course:course,text:text,startdate:startdate,enddate:enddate,time:time,teacher:teacher,password:password,link:link})//req.body 
         .subscribe(
           data=>{console.log(data)},
           err=>console.log(err)
         )
+        userform.resetForm();     
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

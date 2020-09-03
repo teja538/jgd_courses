@@ -63,8 +63,7 @@
   }
 
   .lym{
-    display: flex;
-    flex-flow: wrap;
+    
     background-image: url('../../assets/img1/lym1.jpg');
     background-size: cover; 
   }
@@ -96,6 +95,7 @@
     margin-right: 10%; */
     display: flex;
     flex-flow: wrap;
+    justify-content: space-around;
 }
 .cards1 > mat-card {
     margin-bottom: 16px;
@@ -170,6 +170,7 @@
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  justify-content: space-around;
   }
 
   .background-primary {

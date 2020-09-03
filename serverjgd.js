@@ -10,11 +10,12 @@ app.use(express.static(path.join(__dirname,'dist/jgd')))
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-app.use("/form",form);  //when url goes to localhost:3000/form i.e click on signup this details.js activates it gets the reqdetails from service
+app.use("/form",form);  //when url goes to localhost:2000/form i.e click on signup this details.js activates it gets the reqdetails from service
 
 app.get("*",function(req,res){ //only by writing this we get html pg of signup nd login
-    res.sendFile(path.join(__dirname,"dist/jgdforms/index.html"));
+    res.sendFile(path.join(__dirname,"dist/jgd/index.html"));
 });
+
 
 const port=2000;
 

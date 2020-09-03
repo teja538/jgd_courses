@@ -112,11 +112,13 @@
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    justify-content: space-around;
+    justify-content:center;
+    
 }
 
 .timg
 {
+    padding: 3%;
     /* padding-top: 5%;
     height: 80%;
     width: 40%;
@@ -128,10 +130,4 @@
     
 }
 
-.aboutteacher
-{
-    width: 40%;
-   
-
-}
 

@@ -9,6 +9,9 @@ import { InfoformComponent } from './infoform/infoform.component';
 import { LoginComponent } from './login/login.component';
 import { CoursesComponent } from './courses/courses.component'; 
 
+import {ServedetailsService} from './servedetails.service';
+import {CoursesService } from './courses.service';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
@@ -73,7 +76,7 @@ import { FooterComponent } from './footer/footer.component';
     MatDialogModule,
     FormsModule 
   ],
-  providers: [],
+  providers: [ServedetailsService,CoursesService],
   bootstrap: [AppComponent],
   entryComponents: [
     LoginComponent

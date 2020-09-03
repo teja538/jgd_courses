@@ -9,28 +9,37 @@
     <h1>Enter Course details</h1>
     <div class="card" style="width: 75%;margin-left:10%;">
         {{userform.value|json}}
-        <form #userform="ngForm" (ngSubmit)="onsubmit(course.value,date.value,time.value,teacher.value,link.value,password.value)" novalidate>
+        <form #userform="ngForm" (ngSubmit)="onsubmit(course.value,text.value,startdate.value,enddate.value,time.value,teacher.value,link.value,password.value,userform)" novalidate>
 
             <div class="form-group">
                 <label>Course name</label>
                 <input type="text" class="form-control" name="coursename" #course ngModel>
             </div>
 
+            <div class="form-group">
+                <label>Image text</label>
+                <input type="text" class="form-control" name="text" #text ngModel>
+            </div>
+
             <div class="row">
                 <div class="col">
                     <div class="form-group">
-                        <label>Dates</label>
-                        <input type="text" class="form-control" name="date" #date ngModel>
+                        <label>starting date</label>
+                        <input type="date" class="form-control" name="startdate" #startdate ngModel>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
-                        <label>Timings</label>
-                        <input type="text" class="form-control" name="time" #time ngModel>
+                        <label>ending date</label>
+                        <input type="date" class="form-control" name="enddate" #enddate ngModel>
                     </div>
                 </div>
             </div>
 
+            <div class="form-group">
+                <label>Time</label>
+                <input type="text" class="form-control" name="time" #time ngModel>
+            </div>
 
             <div class="form-group">
                 <label>Teachers</label>

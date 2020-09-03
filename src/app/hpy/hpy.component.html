@@ -47,89 +47,48 @@
         <h1 style="text-align: center;margin-top: 6%;color: aliceblue;">Upcoming Courses</h1>
 
         <div class="upcoming">
-          <div class="ca card0">
-            <mat-card>
-              <div class="con">
-              <img mat-card-image src="../../assets/img1/hpyimg1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-              <div class="mid">
-                <div class="text">Lets do</div></div>
-              </div>
-              <mat-card-content>
-                  <h3 style="font-family: 'Sriracha', cursive;">The Happiness Program</h3>
-                  <p class="cdet">10th to 13th sept</p>
-                  <p class="cdet">evening 6 to 8</p>
-                  <p class="cdet">with sudarshan badireddy</p>
-              </mat-card-content>
-        
-              <mat-card-actions style="display: flex;justify-content: space-around;">
-                <button mat-raised-button class="background-primary">REGISTER</button>
-                <button mat-raised-button class="background-primary">SHARE</button>
-                
-              </mat-card-actions>
-            </mat-card>
-          </div>
-        
-          <div class="ca card2">
-        
-            <mat-card>
-              <div class="con">
-              <img mat-card-image src="../../assets/img1/hpyimg2.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-              <div class="mid">
-                <div class="text">Lets do</div></div>
-              </div>
-              <mat-card-content>
-                  <h3 style="font-family: 'Sriracha', cursive;">The Happiness Program</h3>
-                  <p class="cdet">10th to 13th sept</p>
-                  <p class="cdet">evening 6 to 8</p>
-                  <p class="cdet">with sudarshan badireddy</p>
-              </mat-card-content>
-              <mat-card-actions style="display: flex;justify-content: space-around;">
-                <button mat-raised-button class="background-primary">REGISTER</button>
-                <button mat-raised-button class="background-primary">SHARE</button>
-               
-              </mat-card-actions>
-            </mat-card>
-            
-          </div>
-        
-        
-          <div class="ca card3">
-        
-            <mat-card>
-              <div class="con">
-              <img mat-card-image src="../../assets/img1/hpyimg3.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-              <div class="mid">
-                <div class="text">Lets do</div></div>
-              </div>
-              <mat-card-content>
-                  <h3 style="font-family: 'Sriracha', cursive;">The Happiness Program</h3>
-                  <p class="cdet">10th to 13th sept</p>
-                  <p class="cdet">evening 6 to 8</p>
-                  <p class="cdet">with sudarshan badireddy</p>
-              </mat-card-content>
-              <mat-card-actions style="display: flex;justify-content: space-around;">
-                <button mat-raised-button class="background-primary">REGISTER</button>
-                <button mat-raised-button class="background-primary">SHARE</button>
-                
-              </mat-card-actions>
-            </mat-card>
-            
-          </div>
+          <div *ngFor="let cd of coursedet1;let i=index;" >
+    <div class="ca card0">
+      <mat-card>
+        <div class="con">
+        <img mat-card-image src="{{images[i].img}}" style="height: 250px;" alt="Photo of a Shiba Inu" >
+        <div class="mid">
+          <div class="text">{{cd.Imagetext}}</div></div>
+        </div>
+        <mat-card-content>
+            <h3 style="font-family: 'Sriracha', cursive;">{{cd.coursename}}</h3>
+            <p class="cdet">{{cd.startdate | date:'mediumDate'}} to {{cd.enddate | date:'mediumDate'}}</p>
+            <p class="cdet">{{cd.time}}</p>
+            <p class="cdet">{{cd.teacher}}</p>
+        </mat-card-content>
+
+        <mat-card-actions style="display: flex;justify-content: space-around;">
+          <button mat-raised-button class="background-primary">REGISTER</button>
+          <button mat-raised-button class="background-primary">SHARE</button>
+          
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
         </div>
 
     </div>
 
     <h1 style="text-align: center;padding-top: 3%;">About Trainer</h1>
-    <div class="teacher">
-        <div class="timg">
-            <img src="../assets/img1/boat.jpg" height="40%" width="40%">
-        </div>
-        <div class="aboutteacher">
-            
-            <h1 style="padding-top:8% ;padding-left: 8%;font-family: 'Sriracha', cursive;">Name ........ ..............</h1>
-            <p style="padding: 8%;">The Art of Living is more of a principle, a philosophy of living life to its fullest. It is more a movement than an organization. Its core value is to find peace within oneself and to unite people in our society – of different cultures, traditions, religions, nationalities; and thus reminding us all that we have one goal to uplift human life everywhere."</p>
 
-        </div>
+    <div class="teacher">
+
+      <div class="timg">
+        <img src="../assets/img1/boat.jpg" height="300px" width="300px">
+        <!-- <img src="../../assets/img/70.png" height="110px" width="180px"> -->
+      </div>
+      
+      <div class="matter">
+        <p style="font-size: 22px;padding-top: 5%;">
+          The Art of Living is more of a principle, a philosophy<br> of living life to its fullest. It is more <br>
+          The Art of Living is more of a principle, a philosophy<br> of living life to its fullest. It is more 
+        </p>
+      </div>
     </div>
 
   <app-footer></app-footer>

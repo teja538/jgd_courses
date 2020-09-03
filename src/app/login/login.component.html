@@ -1,27 +1,35 @@
+<div class="card">
+    <mat-toolbar style="background-color: rgba(32, 178, 171, 0.514);color: white;">
+        Login
+      <!-- <span class="flex-spacer"></span> -->
+      <!-- <button mat-button mat-dialog-close>&times;</button> -->
+    </mat-toolbar>
+  <div class="align">
+    <form novalidate #loginForm="ngForm" (ngSubmit)="onSubmit()">
 
-<mat-toolbar color="primary">
-    Login
-  <span class="flex-spacer"></span>
-  <button mat-button mat-dialog-close>&times;</button>
-</mat-toolbar>
-<form novalidate #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <!-- <mat-dialog-content> -->
+          <p>
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>User name</mat-label>
+              <input matInput placeholder="Username" type="text" [(ngModel)]="user.username" name="username"  #username="ngModel" autocomplete="off" required>
+              <mat-error *ngIf="username.errors?.required">Username is required</mat-error>
+            </mat-form-field>
+        </p>
 
-    <mat-dialog-content>
-      <p>
-        <mat-form-field class="full-width">
-          <input matInput placeholder="Username" type="text" [(ngModel)]="user.username" name="username"  #username="ngModel" autocomplete="off" required>
-          <mat-error *ngIf="username.errors?.required">Username is required</mat-error>
-        </mat-form-field>
-     </p>
-     <p>
-        <mat-form-field class="full-width">
-          <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" name="password" #password="ngModel" autocomplete="off" required>
-          <mat-error *ngIf="password.errors?.required">Password is required</mat-error>
-        </mat-form-field>
-    </p>
-    </mat-dialog-content>
-    <mat-dialog-actions>
-      <span class="flex-spacer"></span>
-      <button type="submit" mat-button class="background-primary text-floral-white"  [disabled]="loginForm.form.invalid">Login</button>
-    </mat-dialog-actions>
-  </form>
+        <p>
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" name="password" #password="ngModel" autocomplete="off" required>
+              <mat-error *ngIf="password.errors?.required">Password is required</mat-error>
+            </mat-form-field>
+        </p>
+        <!-- </mat-dialog-content>
+        <mat-dialog-actions>
+          <span class="flex-spacer"></span>
+          <button type="submit" mat-button class="background-primary text-floral-white"  [disabled]="loginForm.form.invalid">Login</button>
+        </mat-dialog-actions> -->
+        <button type="submit" style="background-color: rgba(32, 178, 171, 0.514);color: white;" mat-button [disabled]="loginForm.form.invalid">Login</button>
+        
+      </form>
+    </div>
+</div>

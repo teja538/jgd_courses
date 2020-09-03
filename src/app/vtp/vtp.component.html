@@ -11,28 +11,24 @@
       <header style="color: aliceblue;padding: 20px;margin-left: 7%;">
         <h1 style="font-size: 60px;"><span style="color:orange">V</span>olunteer</h1>
         <h1 style="font-size: 60px;"><span style="color:orange">T</span>raining <span style="color:orange">P</span>rogram</h1>
-        <!-- <h1 style="font-size: 60px;"><span style="color:orange">P</span>rogram</h1> -->
-        <h1 style="font-family: 'Caveat';">Discover & polish hidden shades of your Peronality...<br>Meet colorful & <span style="color:orange">Versatile</span> you</h1>   
+        <h1 style="font-family: 'Caveat';">Discover & polish hidden shades of your Peronality...<br>Meet colorful & <span style="color:orange">Versatile</span> you</h1>     
       </header>
-        <!-- <div class="smimg">
-            <img src="../assets/img1/voltree1.jpg">
-        </div> -->
     </div>
 
     <h1 style="text-align: center;margin-top: 6%;">Upcoming Courses</h1>
 
 <div class="upcoming">
-  <div *ngFor="let cd of coursedetails">
+  <div *ngFor="let cd of coursedet1;let i=index;" >
     <div class="ca card0">
       <mat-card>
         <div class="con">
-        <img mat-card-image src="{{cd.image}}" style="height: 250px;" alt="Photo of a Shiba Inu" >
+        <img mat-card-image src="{{images[i%3].img}}" style="height: 250px;" alt="Photo of a Shiba Inu" >
         <div class="mid">
-          <div class="text">Lets do</div></div>
+          <div class="text">{{cd.Imagetext}}</div></div>
         </div>
         <mat-card-content>
             <h3 style="font-family: 'Sriracha', cursive;">{{cd.coursename}}</h3>
-            <p class="cdet">{{cd.date}}</p>
+            <p class="cdet">{{cd.startdate | date:'mediumDate'}} to {{cd.enddate | date:'mediumDate'}}</p>
             <p class="cdet">{{cd.time}}</p>
             <p class="cdet">{{cd.teacher}}</p>
         </mat-card-content>
@@ -55,8 +51,8 @@
 </div>
 
 <div class="teacher">
-    <h1 style="text-align: center;padding: 5%;">About the trainer</h1>
-    <img style="border-radius: 100%;"src="../assets/img/ohp1.jpg">
+    <h1 style="text-align: center;padding:3%;">About the trainer</h1>
+    <img style="border-radius: 100%;"src="../assets/img/ohp1.jpg" width="300px">
     <div style="text-align: center; width: 50%;">
     <p style="font-style: regular;">The term happiness is used in the context of mental or emotional states, including positive or pleasant emotions ranging from contentment to intense joy.[1] It is also used in the context of life satisfaction, subjective well-being, eudaimonia, flourishing and well-being</p>
     </div>
