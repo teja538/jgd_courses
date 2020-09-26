@@ -13,83 +13,42 @@
 </div>
 
 <div class="courses">
-
-    <h1 style="text-align: center;padding-top:3%">Upcoming Courses</h1>
-    <div class="upcoming">
-        <div class="ca card0">
-          <mat-card>
-            <div class="con">
-            <img mat-card-image src="../../assets/img1/sahajimg1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-            <div class="mid">
-              <div class="text">Lets do</div></div>
-            </div>
-            <mat-card-content>
-              <h3 style="font-family: 'Sriracha', cursive;">Sahaj samadhi meditation</h3>
-                <p class="cdet">10th to 13th sept</p>
-                <p class="cdet">evening 6 to 8</p>
-                <p class="cdet">with sudarshan badireddy</p>
-            </mat-card-content>
-      
-            <mat-card-actions style="display: flex;justify-content: space-around;">
-              <button mat-raised-button class="background-primary">REGISTER</button>
-              <button mat-raised-button class="background-primary">SHARE</button>
-              
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      
-        <div class="ca card2">
-      
-          <mat-card>
-            <div class="con">
-            <img mat-card-image src="../../assets/img1/sahaj2.1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-            <div class="mid">
-              <div class="text">Lets do</div></div>
-            </div>
-            <mat-card-content>
-              <h3 style="font-family: 'Sriracha', cursive;">Sahaj samadhi meditation</h3>
-                <p class="cdet">10th to 13th sept</p>
-                <p class="cdet">evening 6 to 8</p>
-                <p class="cdet">with sudarshan badireddy</p>
-            </mat-card-content>
-            <mat-card-actions style="display: flex;justify-content: space-around;">
-              <button mat-raised-button class="background-primary">REGISTER</button>
-              <button mat-raised-button class="background-primary">SHARE</button>            
-            </mat-card-actions>
-          </mat-card>
-          
-        </div>
-      
-      
-        <div class="ca card3">
-      
-          <mat-card>
-            <div class="con">
-            <img mat-card-image src="../../assets/img1/sahaj3.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
-            <div class="mid">
-              <div class="text">Lets do</div></div>
-            </div>
-            <mat-card-content>
-              <h3 style="font-family: 'Sriracha', cursive;">Sahaj samadhi meditation</h3>
-                <p class="cdet">10th to 13th sept</p>
-                <p class="cdet">evening 6 to 8</p>
-                <p class="cdet">with sudarshan badireddy</p>
-            </mat-card-content>
-            <mat-card-actions style="display: flex;justify-content: space-around;">
-              <button mat-raised-button class="background-primary">REGISTER</button>
-              <button mat-raised-button class="background-primary">SHARE</button>           
-            </mat-card-actions>
-          </mat-card>    
-        </div>
+  <h1 style="text-align: center;padding-top:3%">Upcoming Courses</h1>
+  <div class="upcoming">
+    <div *ngFor="let cd of coursedet1;let i=index;" >
+      <div class="ca card0">
+        <mat-card>
+          <div class="con">
+          <img mat-card-image src="{{images[i%3].img}}" style="height: 250px;" alt="Photo of a Shiba Inu" >
+          <div class="mid">
+            <div class="text">{{cd.Imagetext}}</div></div>
+          </div>
+          <mat-card-content>
+              <h3 style="font-family: 'Sriracha', cursive;">{{cd.coursename}}</h3>
+              <p class="cdet">{{cd.startdate | date:'mediumDate'}} to {{cd.enddate | date:'mediumDate'}}</p>
+              <p class="cdet">{{cd.time}}</p>
+              <p class="cdet">{{cd.teacher}}</p>
+          </mat-card-content>
+  
+          <mat-card-actions style="display: flex;justify-content: space-around;">
+            <button mat-raised-button class="background-primary">REGISTER</button>
+            <button mat-raised-button class="background-primary">SHARE</button>
+            
+          </mat-card-actions>
+        </mat-card>
       </div>
+    </div>
+  </div> 
 </div>
 
+
+  
 <h1 style="text-align: center;padding: 3%;">About the Trainer</h1>
 <div class="teacher">
 
   <div class="teacher1">
       <div class="timg" >
-        <img src="../assets/img/ohp1.jpg">
+        <img src="../assets/img/ohp1.jpg" width="80%">
       </div>
 
       <div class="ttext">
@@ -98,8 +57,9 @@
         <p>kjadnfkjsfmbh<br>jkshdkjfhdsiufhsnbbgsuh<br>ilsufdkjhskdhfisudfjb</p>
       </div>
   </div>
-  
 </div>
+  
+
 
 <app-footer></app-footer>
 

@@ -20,8 +20,7 @@
 .courses
 {
     background-image:url("../../../src/assets/img1/up1.jpg");
-    /* min-height: 70%;
-    margin-bottom: 15%; */
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,5 +114,7 @@
 
 .timg
 {
-    padding:5%;
+    padding-top: 10px;
+    text-align: center;
+   
 }

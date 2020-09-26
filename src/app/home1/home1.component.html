@@ -1,89 +1,120 @@
 <app-courses></app-courses>
 
-<mat-carousel
-  timings="250ms ease-in"
-  [autoplay]="true"
-  interval="5000"
-  color="accent"
-  maxWidth="auto"
-  maxHeight="100px"
- 
-  proportion="35"
-
-  slides="3"
-  [loop]="true"
-  [hideArrows]="false"
-  [hideIndicators]="false"
-  [useKeyboard]="true"
-  [useMouseWheel]="false"
-  orientation="ltr"
->
-
-<mat-carousel-slide
-    #matCarouselSlide
-    [image]="slides[0].image"
-    overlayColor="#00000040"
-    [hideOverlay]="false"
+<div class="carosal1">
+  <mat-carousel
+    timings="250ms ease-in"
+    [autoplay]="true"
+    interval="5000"
+    color="accent"
+    maxWidth="auto"
+    proportion="35"
+    slides="3"
+    [loop]="true"
+    [hideArrows]="false"
+    [hideIndicators]="false"
+    [useKeyboard]="true"
+    [useMouseWheel]="false"
+    orientation="ltr"
   >
-    <!-- <h1 style="color: aliceblue;padding: 20px;">{{slides[0].text}}</h1>
-    <h3 style="color: aliceblue;margin-left: 10%;">Making <span style="color: yellow;">LIFE</span> a Celebration</h3> -->
-
-    <header style="color: aliceblue;padding: 20px;margin-left: 7%;">
-      <h1 style="font-size: 60px;">The</h1>
-      <h1 style="font-size: 60px;"><span style="color: yellow">H</span>appiness <span style="color:yellow">P</span>rogram</h1>
-      <!-- <p class="subhead" style="margin-left: 10%;">Making <span style="color: yellow;">LIFE</span> a Celebration</p> -->
-      <h1 style="font-family: 'Caveat';">Practical Wisdom for Improving the quality of <span style="color: yellow">LIFE</span></h1>
-<br>
-<br>
-      <!-- <h1 style="font-family:'Patrick Hand SC', cursive; "> -->
-      <!-- <h1>  
-        Ready to de-stress,<br>
-        build up resilience<br>
-        and calm your mind?
-      </h1>
-      <button style="background-color: yellow;color: black;" mat-button routerLink="/hpy">join us</button> -->
-      
-    </header>
-
- 
-  </mat-carousel-slide>
-
 
   <mat-carousel-slide
-    #matCarouselSlide
-    [image]="slides[1].image"
-    overlayColor="#00000040"
-    [hideOverlay]="false"
-  >
-  <header style="color: aliceblue;padding: 20px;margin-left: 7%;">
-    <h1 style="font-size: 60px;"><span style="color: skyblue">S</span>ahaj</h1>
-    <h1 style="font-size: 60px;"><span style="color:skyblue">S</span>amadhi <span style="color: skyblue">M</span>editation</h1>
-    <h1 style="font-family: 'Caveat';">Experience deep <span style="color: skyblue">Inner Peace</span> anytime anywhere</h1>
-    
+      #matCarouselSlide
+      [image]="slides[0].image"
+      overlayColor="#00000040"
+      [hideOverlay]="false"
+    >
+      <!-- <h1 style="color: aliceblue;padding: 20px;">{{slides[0].text}}</h1>
+      <h3 style="color: aliceblue;margin-left: 10%;">Making <span style="color: yellow;">LIFE</span> a Celebration</h3> -->
 
-  </header>
-
-  </mat-carousel-slide>
-
-
-  <mat-carousel-slide
-    #matCarouselSlide
-   
-    [image]="slides[2].image"
-    overlayColor="#00000040"
-    [hideOverlay]="false"
-  >
-  <header style="color: aliceblue;padding: 20px;margin-left: 7%;">
-    <h1 style="font-size: 60px;"><span style="color:orange">V</span>olunteer</h1>
-    <h1 style="font-size: 60px;"><span style="color:orange">T</span>raining <span style="color:orange">P</span>rogram</h1>
-    <!-- <h1 style="font-size: 60px;"><span style="color:orange">P</span>rogram</h1> -->
-    <h1 style="font-family: 'Caveat';">Discover & polish hidden shades of your Peronality...<br>Meet colorful & <span style="color:orange">Versatile</span> you</h1>
-   
-  </header>
-  </mat-carousel-slide>
+      <header style="color: aliceblue;padding: 20px;margin-left: 7%;">
+        <h1 style="font-size: 60px;">The</h1>
+        <h1 style="font-size: 60px;"><span style="color: yellow">H</span>appiness <span style="color:yellow">P</span>rogram</h1>
+        <!-- <p class="subhead" style="margin-left: 10%;">Making <span style="color: yellow;">LIFE</span> a Celebration</p> -->
+        <h1 style="font-family: 'Caveat';">Practical Wisdom for Improving the quality of <span style="color: yellow">LIFE</span></h1>
+  <br>
+  <br>
+        <!-- <h1 style="font-family:'Patrick Hand SC', cursive; "> -->
+        <!-- <h1>  
+          Ready to de-stress,<br>
+          build up resilience<br>
+          and calm your mind?
+        </h1>
+        <button style="background-color: yellow;color: black;" mat-button routerLink="/hpy">join us</button> -->
+        
+      </header>
 
   
-</mat-carousel>
+    </mat-carousel-slide>
+
+
+    <mat-carousel-slide
+      #matCarouselSlide
+      [image]="slides[1].image"
+      overlayColor="#00000040"
+      [hideOverlay]="false"
+    >
+    <header style="color: aliceblue;padding: 20px;margin-left: 7%;">
+      <h1 style="font-size: 60px;"><span style="color: skyblue">S</span>ahaj</h1>
+      <h1 style="font-size: 60px;"><span style="color:skyblue">S</span>amadhi <span style="color: skyblue">M</span>editation</h1>
+      <h1 style="font-family: 'Caveat';">Experience deep <span style="color: skyblue">Inner Peace</span> anytime anywhere</h1>
+      
+
+    </header>
+
+    </mat-carousel-slide>
+
+
+    <mat-carousel-slide
+      #matCarouselSlide
+    
+      [image]="slides[2].image"
+      overlayColor="#00000040"
+      [hideOverlay]="false"
+    >
+    <header style="color: aliceblue;padding: 20px;margin-left: 7%;">
+      <h1 style="font-size: 60px;"><span style="color:orange">V</span>olunteer</h1>
+      <h1 style="font-size: 60px;"><span style="color:orange">T</span>raining <span style="color:orange">P</span>rogram</h1>
+      <!-- <h1 style="font-size: 60px;"><span style="color:orange">P</span>rogram</h1> -->
+      <h1 style="font-family: 'Caveat';">Discover & polish hidden shades of your Peronality...<br>Meet colorful & <span style="color:orange">Versatile</span> you</h1>
+    
+    </header>
+    </mat-carousel-slide>
+
+    
+  </mat-carousel>
+</div>
+
+<div class="m1carosal">
+
+  <div class="m1">
+    <img src="../assets/img1/hpy1.jpg" alt="">
+    <div class="m1t">
+      <h1>The</h1>
+        <h1><span style="color: yellow">H</span>appiness <span style="color:yellow">P</span>rogram</h1>
+        <!-- <p class="subhead" style="margin-left: 10%;">Making <span style="color: yellow;">LIFE</span> a Celebration</p> -->
+        <h1 style="font-family: 'Caveat';">Practical Wisdom for Improving the quality of <span style="color: yellow">LIFE</span></h1>
+    </div>
+  </div>
+
+  <div class="m2">
+    <img src="../assets/img1/sahaj3.jpg" alt="">
+    <div class="m1t">
+      <h1><span style="color: skyblue">S</span>ahaj</h1>
+      <h1><span style="color:skyblue">S</span>amadhi <span style="color: skyblue">M</span>editation</h1>
+      <h1 style="font-family: 'Caveat';">Experience deep <span style="color: skyblue">Inner Peace</span> anytime anywhere</h1>
+    </div>
+
+  </div>
+  <div class="m3">
+    <img src="../assets/img1/vtp1.jpg" alt="">
+    <div class="m1t">
+      <h1><span style="color:orange">V</span>olunteer</h1>
+      <h1><span style="color:orange">T</span>raining <span style="color:orange">P</span>rogram</h1>
+      <h1 style="font-family: 'Caveat';">Discover & polish hidden shades of your Peronality...<br>Meet colorful & <span style="color:orange">Versatile</span> you</h1>
+    
+    </div>
+  </div>
+</div>
 
 <div class="quote1">
   <div class="quote">
@@ -152,8 +183,10 @@
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button class="background-primary">REGISTER</button>
-        <button mat-raised-button class="background-primary">SHARE</button>
-        <button mat-raised-button class="background-primary"  routerLink="/sahaj"><mat-icon>navigate_next</mat-icon></button>
+        <button mat-raised-button class="background-primary"  routerLink="/sahaj">More</button>
+        <button mat-mini-fab style="background-color: lightseagreen;">
+          <mat-icon>share</mat-icon>
+        </button>
         
       </mat-card-actions>
     </mat-card>
@@ -177,8 +210,10 @@
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button class="background-primary">REGISTER</button>
-        <button mat-raised-button class="background-primary">SHARE</button>
-        <button mat-raised-button class="background-primary" routerLink="/vtp"><mat-icon>navigate_next</mat-icon></button>
+        <button mat-raised-button class="background-primary" routerLink="/vtp">More</button>
+        <button mat-mini-fab style="background-color: lightseagreen;">
+          <mat-icon>share</mat-icon>
+        </button>
       </mat-card-actions>
     </mat-card>
     
@@ -330,10 +365,12 @@
 </div>
 
 <div class="ex">
-  <h1 style="color: aliceblue;text-align: center;padding: 4%;">What others say ...............</h1>
+  
+  <div>
+    <h1 style="color: aliceblue;text-align: center;padding: 4%;">What others say ...............</h1>
+  </div>
 
   <div class="car2">
-    <div>
       <mat-carousel
       timings="250ms ease-in"
       [autoplay]="true"
@@ -354,7 +391,7 @@
       *ngFor="let ex of experience; let i = index"
       
       >
-        <!-- <h1 style="color: aliceblue;">{{slide.text}}</h1> -->
+       
         <mat-card>
           <mat-card-header>  
             <img src="{{ex.image}}" style="height: 120px;width: 200px;">
@@ -366,8 +403,10 @@
       </mat-carousel-slide>
     </mat-carousel>
   </div> 
-</div>
 
+
+
+<!-- </div> -->
 </div>
 
 

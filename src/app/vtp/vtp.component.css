@@ -87,6 +87,19 @@
     color:brown;
 }
 
+@media all and (max-width:1169px)
+{
+    .imgtext
+    {
+        color: linen;
+    }
+    .fixedbg img
+    {
+        display: none;
+    }
+}
+
+
 .teacher
 {
     display: flex;
